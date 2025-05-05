@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пожертвование для глухих</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #6a1b9a;
+    }
+    .donation-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    .donation-table th, .donation-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .donation-form {
+      margin-top: 20px;
+    }
+    .donation-form input, .donation-form select, .donation-form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .highlight {
+      background: #e1bee7;
+      padding: 15px;
+      border-left: 4px solid #8e24aa;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Подари голос поддержки</h1>
+    <p>Помоги глухим и слабослышащим людям слышать мир сердцем</p>
+  </header>
+
+  <main>
+    <h2>Почему это важно</h2>
+    <p>Ваша помощь даёт возможность глухим людям жить полной жизнью: общаться, учиться и чувствовать себя частью общества.</p>
+
+    <h2>Куда идут ваши пожертвования</h2>
+    <table class="donation-table">
+      <tr>
+        <th>Сумма</th>
+        <th>Что это покрывает</th>
+      </tr>
+      <tr>
+        <td>500 сом</td>
+        <td>Урок жестового языка для ребёнка</td>
+      </tr>
+      <tr>
+        <td>1500 сом</td>
+        <td>Медицинское обследование слуха</td>
+      </tr>
+      <tr>
+        <td>3000 сом</td>
+        <td>Поддержка семьи на месяц</td>
+      </tr>
+      <tr>
+        <td>10 000+ сом</td>
+        <td>Частичная оплата слухового аппарата</td>
+      </tr>
+    </table>
+
+    <div class="highlight">
+      <strong>История Айгуль:</strong><br>
+      “Раньше я боялась идти в школу — я не понимала, о чём говорят. А теперь я учусь жестовому языку, у меня появились друзья. Спасибо всем, кто помогает таким, как я.”
+    </div>
+
+    <h2>Сделать пожертвование</h2>
+    <form class="donation-form">
+      <label for="amount">Сумма (сом):</label>
+      <input type="number" id="amount" name="amount" placeholder="Введите сумму" required>
+
+      <label for="payment">Способ оплаты:</label>
+      <select id="payment" name="payment">
+        <option>Банковская карта</option>
+        <option>Электронный кошелёк</option>
+        <option>PayPal</option>
+        <option>Мобильный платёж</option>
+      </select>
+
+      <button type="submit">Пожертвовать сейчас</button>
+    </form>
+  </main>
+
+  <footer>
+    Спасибо, что делаете этот мир добрее. Даже 1 сом может изменить чью-то жизнь.
+  </footer>
+
+</body>
+</html>

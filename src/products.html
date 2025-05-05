@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Магазин оборудования</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5c2d91;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 70px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin: 10px; 
+    }
+
+    .product-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #5c2d91;
+      margin-bottom: 12px;
+    }
+
+    .buy-button {
+      background-color: #5c2d91;
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 14px;
+      transition: background-color 0.3s;
+      margin-top: auto;
+    }
+
+    .buy-button:hover {
+      background-color: #4a2473;
+    }
+
+    @media (max-width: 1000px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Магазин оборудования</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://cdn.27.ua/sc--media--prod/default/a5/88/8b/a5888bf7-dba4-419f-bd61-ccb4fac7d123.jpg" alt="Product 1" class="product-image">
+      <div class="product-name">Слуховой аппарат A-100</div>
+      <div class="product-desc">Усилитель слуха, компактный и мощный</div>
+      <div class="product-price">15 000 KGS</div>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
+    <div class="product-card">
+      <img src="https://optim.tildacdn.com/tild3338-3836-4438-b066-643761393237/-/resize/662x/-/format/webp/Indy-ep_001_1.png.webp" alt="Product 2" class="product-image">
+      <div class="product-name">Протез руки BionX</div>
+      <div class="product-desc">Современный бионический протез</div>
+      <div class="product-price">32 000 KGS</div>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
+    <div class="product-card">
+      <img src="https://img.freepik.com/free-photo/computer-keyboard_1203-8286.jpg" alt="Product 3" class="product-image">
+      <div class="product-name">Жестовая клавиатура</div>
+      <div class="product-desc">Клавиатура для ввода жестов</div>
+      <div class="product-price">8 500 KGS</div>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
+    <div class="product-card">
+      <img src="https://ae04.alicdn.com/kf/S2e66212ad176403186bb535c95288a6cj.png" alt="Product 4" class="product-image">
+      <div class="product-name">Слуховой усилитель MiniPro</div>
+      <div class="product-desc">Компактный с хорошим звуком</div>
+      <div class="product-price">2 000 KGS</div>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
+    <div class="product-card">
+      <img src="https://www.deafnet.ru/images/Image/2010/news/News_31984_2.jpg" alt="Product 5" class="product-image">
+      <div class="product-name">Браслет вибро-уведомлений</div>
+      <div class="product-desc">Сигналы и будильники через вибрации</div>
+      <div class="product-price">3 800 KGS</div>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
